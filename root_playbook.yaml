@@ -32,7 +32,7 @@
   
   - name: add user
     become: yes
-    shell: "sudo chmod 666 /var/run/docker.sock"
+    shell: "chmod 666 /var/run/docker.sock"
 
   - name: install python package manager
     apt:
